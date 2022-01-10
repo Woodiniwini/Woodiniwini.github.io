@@ -28,6 +28,14 @@ a {
     line-height: 2.3125rem;
 }
 
+.btn-primary {
+    border-color: transparent;
+}
+
+.image-full-width {
+    width: 100%;
+}
+
 .megamenu {
     position: static
 }
