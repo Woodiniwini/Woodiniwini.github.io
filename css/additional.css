@@ -32,7 +32,11 @@ a {
     border-color: transparent;
 }
 
-.image-full-width {
+.image-full-width, .download-btn {
+    width: 100%;
+}
+
+#myTabContent img {
     width: 100%;
 }
 
