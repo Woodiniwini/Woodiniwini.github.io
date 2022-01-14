@@ -32,12 +32,9 @@ a {
     border-color: transparent;
 }
 
-.image-full-width, .download-btn {
-    width: 100%;
-}
-
 #myTabContent img {
     width: 100%;
+    height: 90%;
 }
 
 .megamenu {
