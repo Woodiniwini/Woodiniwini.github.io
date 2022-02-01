@@ -1425,3 +1425,83 @@
 .bg-gradient-gray-dark.btn:not(:disabled):not(.disabled):active, .bg-gradient-gray-dark.btn:not(:disabled):not(.disabled).active, .bg-gradient-gray-dark.btn:active, .bg-gradient-gray-dark.btn.active {
     background: #1d2124 linear-gradient(180deg, #3f4245, #1d2124) repeat-x !important;
 }
+
+.border-lightblue {
+    border-color: #3c8dbc !important;
+}
+
+.border-navy {
+    border-color: #001f3f !important;
+}
+
+.border-purple {
+    border-color: #6f42c1 !important;
+}
+
+.border-fuchsia {
+    border-color: #f012be !important;
+}
+
+.border-pink {
+    border-color: #e83e8c !important;
+}
+
+.border-maroon {
+    border-color: #d81b60 !important;
+}
+
+.border-orange {
+    border-color: #fd7e14 !important;
+}
+
+.border-lime {
+    border-color: #01ff70 !important;
+}
+
+.border-teal {
+    border-color: #20c997 !important;
+}
+
+.border-olive {
+    border-color: #3d9970 !important;
+}
+
+.text-lightblue {
+    color: #3c8dbc !important;
+}
+
+.text-navy {
+    color: #001f3f !important;
+}
+
+.text-purple {
+    color: #6f42c1 !important;
+}
+
+.text-fuchsia {
+    color: #f012be !important;
+}
+
+.text-pink {
+    color: #e83e8c !important;
+}
+
+.text-maroon {
+    color: #d81b60 !important;
+}
+
+.text-orange {
+    color: #fd7e14 !important;
+}
+
+.text-lime {
+    color: #01ff70 !important;
+}
+
+.border-teal {
+    border-color: #20c997 !important;
+}
+
+.border-olive {
+    border-color: #3d9970 !important;
+}

@@ -7,6 +7,10 @@
 }
 
 @media (max-width: 576px) {
+    .container, .container-xs {
+        max-width: 540px;
+    }
+
     .col-xs {
         -ms-flex-preferred-size: 0;
         flex-basis: 0;
