@@ -1,0 +1,75 @@
+.image-zoom-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.image-zoom-container .image-zoom-thumbex {
+  padding: 4px;
+  background-color: transparent;
+}
+
+.image-zoom-container .image-zoom-thumbex .image-zoom-thumbnail {
+  overflow: hidden;
+  position: relative;
+  opacity: 0.88;
+  backface-visibility: hidden;
+  transition: all 0.4s ease-out;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  transform: scale(0.95);
+}
+
+.image-zoom-container .image-zoom-thumbex .image-zoom-thumbnail img {
+  z-index: 1;
+  width: 100%;
+  backface-visibility: hidden;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.image-zoom-container .image-zoom-thumbex .image-zoom-thumbnail p {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  bottom: 25px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 0px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 5px;
+  transition: all 0.3s;
+}
+
+.invert-p .image-zoom-thumbex .image-zoom-thumbnail p {
+  color: #000 !important;
+  background: rgba(255, 255, 255, 0.7) !important;
+}
+
+.image-zoom-container .image-zoom-thumbex .image-zoom-thumbnail:hover {
+  backface-visibility: hidden;
+  transform: scale(1);
+  opacity: 1;
+  z-index: 2;
+}
+
+.image-zoom-container .image-zoom-thumbex .image-zoom-thumbnail:hover p {
+  bottom: 0;
+}
+
+/* <div class="image-zoom-container row invert-p">
+    <div class="image-zoom-thumbex col-lg-4 col-md-6 col-sm-12">
+        <div class="image-zoom-thumbnail"><a href="/list/new.aspx">
+                <img alt="new arrivals" src="/user/files/new-arrivals.png" />
+                <p>NEW ARRIVALS</p>
+            </a>
+        </div>
+    </div>
+</div> */
