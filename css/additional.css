@@ -2,14 +2,24 @@
     height: 65vh;
     min-height: 350px;
     background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
 }
 
 .carousel {
     padding-top: 56px;
+}
+
+.carousel-inner {
+  background-color: #000;
+}
+
+#gallery .img-fluid {
+  max-height: 350px;
+  object-fit: contain;
+  width: 100%;
 }
 
 a {
