@@ -22,6 +22,11 @@
   width: 100%;
 }
 
+#audio-button {
+  text-align: center;
+  padding: 15 30px;
+}
+
 a {
     text-decoration: none;
 }

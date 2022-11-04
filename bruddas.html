@@ -182,7 +182,7 @@
                 <div class="carousel-item" style="background-image: url('files/bois/hostuwuming_on_boat.png')">
                     <div class="carousel-caption">
                         <h5>HostUwUMing</h5>
-                        <p>On Boat</p>
+                        <p>On a Boat</p>
                     </div>
                 </div>
                 <div class="carousel-item" style="background-image: url('files/bois/kyowo_getting_ready.png')">
@@ -205,8 +205,14 @@
         </div>
     </header>
 
+    <section>
+        <div class="row py-2">
+            <div id="audio-button" class="btn bg-warning">Play Background Music</div>
+        </div>
+    </section>
+
     <!-- Page Content -->
-    <section class="py-5">
+    <section class="py-2">
         <div class="row text-center py-3 justify-content-center">
             <div class="row" id="gallery">
                 <div class="col-sm-6">
@@ -227,7 +233,7 @@
                             <img src="files/bois/hostuwuming_on_boat.png" class="img-fluid">
                         </a>
                         <a href="files/bois/hostuwuming_watching.png" data-toggle="lightbox"
-                            data-gallery="example-gallery" data-caption="Looking into homework folder"
+                            data-gallery="example-gallery" data-caption="Looking at homework folder"
                             class="col-md-6 col-sm-12 py-2">
                             <img src="files/bois/hostuwuming_watching.png" class="img-fluid">
                         </a>
@@ -237,13 +243,12 @@
                 <div class="col-sm-6">
                     <div class="row">
                         <a href="files/bois/hostuwuming_watching_close.png" data-toggle="lightbox"
-                            data-gallery="example-gallery" data-caption="Watching into your soul"
+                            data-gallery="example-gallery" data-caption="Looking deep into your soul"
                             class="col-md-6 col-sm-12 py-2">
                             <img src="files/bois/hostuwuming_watching_close.png" class="img-fluid">
                         </a>
                         <a href="files/bois/hostuwuming_portal.png" data-toggle="lightbox"
-                            data-gallery="example-gallery" data-caption="Portal fail 1"
-                            class="col-md-6 col-sm-12 py-2">
+                            data-gallery="example-gallery" data-caption="Portal fail 1" class="col-md-6 col-sm-12 py-2">
                             <img src="files/bois/hostuwuming_portal.png" class="img-fluid">
                         </a>
                         <a href="files/bois/kyowo_getting_ready.png" data-toggle="lightbox"
@@ -320,6 +325,16 @@
     <!-- Put this at the bottom of the page -->
     <script src="./js/index.bundle.min.js"></script>
     <script src="./js/additional.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        var audio = new Audio('files/bois/Barbie_metal_1.mp3');
+        audio.volume = 0.1;
+
+        $("#audio-button").on("click", function () {
+            audio.play();
+            this.style.display = "none";
+        });
+    </script>
 </body>
 
 </html>
