@@ -240,6 +240,11 @@ a {
   font: inherit;
 }
 
+#logo-img {
+  height: auto;
+  width: 150px;
+}
+
 #slide-image-one {
   background-image: url('../files/bois/parallelken_rotating_on_dancefloor.gif') !important;
 }
