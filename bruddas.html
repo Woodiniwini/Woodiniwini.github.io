@@ -17,13 +17,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>jq = jQuery.noConflict();</script>
 </head>
 
 <body style="background-color: #000;">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img id="logo-img" src="files/bois/logo.png"/></a>
+            <a class="navbar-brand" href="index.html"><img id="logo-img" src="files/bois/logo.png" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -92,102 +94,1022 @@
     </section>
     <!-- Button for Background Music End -->
     <!-- Page Content -->
-    <section class="py-2">
-        <div class="row text-center py-3 justify-content-center">
-            <div class="row" id="gallery">
-                <!-- Left -->
-                <div class="col-sm-6">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center">
-                            <div>
-                                <a href="./files/bois/parallelken_rotating_on_dancefloor.gif" data-toggle="lightbox"
-                                    data-gallery="example-gallery" data-caption="Bruddas dancing">
-                                    <img src="files/bois/parallelken_rotating_on_dancefloor.gif" class="img-fluid">
-                                </a>
-                                <a class="btn btn-primary w-100"
-                                    href="./files/bois/parallelken_rotating_on_dancefloor.gif" download>Download</a>
+    <section class="p-2 bg-light">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="minecraft-tab" data-bs-toggle="tab" data-bs-target="#minecraft"
+                    type="button" role="tab" aria-controls="minecraft" aria-selected="true">Minecraft</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="valheim-tab" data-bs-toggle="tab" data-bs-target="#valheim" type="button"
+                    role="tab" aria-controls="valheim" aria-selected="false">Valheim</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="forest-tab" data-bs-toggle="tab" data-bs-target="#forest" type="button"
+                    role="tab" aria-controls="forest" aria-selected="false">The Forest</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="borderlands-tab" data-bs-toggle="tab" data-bs-target="#borderlands"
+                    type="button" role="tab" aria-controls="borderlands" aria-selected="false">Borderlands
+                    3</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="deeprock-tab" data-bs-toggle="tab" data-bs-target="#deeprock" type="button"
+                    role="tab" aria-controls="deeprock" aria-selected="false">Deep Rock
+                    Galactic</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="overcooked-tab" data-bs-toggle="tab" data-bs-target="#overcooked"
+                    type="button" role="tab" aria-controls="overcooked" aria-selected="false">Overcooked 2</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="minecraft" role="tabpanel" aria-labelledby="minecraft-tab">
+                <div class="row text-center py-3 justify-content-center">
+                    <div class="row" id="gallery">
+                        <!-- Left -->
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center hostuwuming minecraft">
+                                    <div>
+                                        <a href="./files/bois/hostuwuming/hostuwuming_minecraft_art.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="HostUwUMing - Masterpiece">
+                                            <img src="files/bois/hostuwuming/hostuwuming_minecraft_art.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/hostuwuming/hostuwuming_minecraft_art.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center hostuwuming minecraft">
+                                    <div>
+                                        <a href="./files/bois/hostuwuming/hostuwuming_minecraft_binoculars.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="HostUwUMing - Binoculars">
+                                            <img src="files/bois/hostuwuming/hostuwuming_minecraft_binoculars.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/hostuwuming/hostuwuming_minecraft_binoculars.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center hostuwuming minecraft">
+                                    <div>
+                                        <a href="./files/bois/hostuwuming/hostuwuming_minecraft_binoculars_2.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="HostUwUMing - Binoculars 2">
+                                            <img src="files/bois/hostuwuming/hostuwuming_minecraft_binoculars_2.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/hostuwuming/hostuwuming_minecraft_binoculars_2.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center hostuwuming minecraft">
+                                    <div>
+                                        <a href="./files/bois/hostuwuming/hostuwuming_minecraft_binoculars_3.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="HostUwUMing - Binoculars 3">
+                                            <img src="files/bois/hostuwuming/hostuwuming_minecraft_binoculars_3.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/hostuwuming/hostuwuming_minecraft_binoculars_3.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center hostuwuming minecraft">
+                                    <div>
+                                        <a href="./files/bois/hostuwuming/hostuwuming_minecraft_buddy.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="HostUwUMing - On a boat with a buddy">
+                                            <img src="files/bois/hostuwuming/hostuwuming_minecraft_buddy.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/hostuwuming/hostuwuming_minecraft_buddy.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center hostuwuming minecraft">
+                                    <div>
+                                        <a href="./files/bois/hostuwuming/hostuwuming_minecraft_character.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="HostUwUMing - Yellow Chicken">
+                                            <img src="files/bois/hostuwuming/hostuwuming_minecraft_character.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/hostuwuming/hostuwuming_minecraft_character.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center hostuwuming minecraft">
+                                    <div>
+                                        <a href="./files/bois/hostuwuming/hostuwuming_minecraft_full_drip.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="HostUwUMing - Full Drip">
+                                            <img src="files/bois/hostuwuming/hostuwuming_minecraft_full_drip.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/hostuwuming/hostuwuming_minecraft_full_drip.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center hostuwuming minecraft">
+                                    <div>
+                                        <a href="./files/bois/hostuwuming/hostuwuming_minecraft_on_boat.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="HostUwUMing - On a boat">
+                                            <img src="files/bois/hostuwuming/hostuwuming_minecraft_on_boat.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/hostuwuming/hostuwuming_minecraft_on_boat.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center hostuwuming minecraft">
+                                    <div>
+                                        <a href="./files/bois/hostuwuming/hostuwuming_minecraft_portal_fail.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="HostUwUMing - Portal Fail">
+                                            <img src="files/bois/hostuwuming/hostuwuming_minecraft_portal_fail.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/hostuwuming/hostuwuming_minecraft_portal_fail.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center hostuwuming minecraft">
+                                    <div>
+                                        <a href="./files/bois/hostuwuming/hostuwuming_minecraft_portal_fail_2.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="HostUwUMing - Portal Fail 2">
+                                            <img src="files/bois/hostuwuming/hostuwuming_minecraft_portal_fail_2.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/hostuwuming/hostuwuming_minecraft_portal_fail_2.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center hostuwuming minecraft">
+                                    <div>
+                                        <a href="./files/bois/hostuwuming/hostuwuming_minecraft_searching.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="HostUwUMing - Searching">
+                                            <img src="files/bois/hostuwuming/hostuwuming_minecraft_searching.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/hostuwuming/hostuwuming_minecraft_searching.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center hostuwuming minecraft">
+                                    <div>
+                                        <a href="./files/bois/hostuwuming/hostuwuming_minecraft_searching_2.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="HostUwUMing - Searching 2">
+                                            <img src="files/bois/hostuwuming/hostuwuming_minecraft_searching_2.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/hostuwuming/hostuwuming_minecraft_searching_2.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center hostuwuming minecraft">
+                                    <div>
+                                        <a href="./files/bois/hostuwuming/hostuwuming_minecraft_staring.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="HostUwUMing - Staring into your soul">
+                                            <img src="files/bois/hostuwuming/hostuwuming_minecraft_staring.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/hostuwuming/hostuwuming_minecraft_staring.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center kyowo minecraft">
+                                    <div>
+                                        <a href="./files/bois/kyowo/kyowo_minecraft_castle.png" data-toggle="lightbox"
+                                            data-gallery="example-gallery" data-caption="KyOwO - Castle">
+                                            <img src="files/bois/kyowo/kyowo_minecraft_castle.png" class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/kyowo/kyowo_minecraft_castle.png" download>Download</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center">
-                            <div>
-                                <a href="./files/bois/parallelken_rotate.gif" data-toggle="lightbox"
-                                    data-gallery="example-gallery" data-caption="Very flexible body">
-                                    <img src="files/bois/parallelken_rotate.gif" class="img-fluid">
-                                </a>
-                                <a class="btn btn-primary w-100" href="./files/bois/parallelken_rotate.gif"
-                                    download>Download</a>
+                        <!-- Left End -->
+                        <!-- Right -->
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center kyowo minecraft">
+                                    <div>
+                                        <a href="./files/bois/kyowo/kyowo_minecraft_getting_ready.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="KyOwO - Getting ready to slay that spider">
+                                            <img src="files/bois/kyowo/kyowo_minecraft_getting_ready.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/kyowo/kyowo_minecraft_getting_ready.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center kyowo minecraft">
+                                    <div>
+                                        <a href="./files/bois/kyowo/kyowo_minecraft_hypixel.png" data-toggle="lightbox"
+                                            data-gallery="example-gallery"
+                                            data-caption="KyOwO - Searching for the hidden treasure/meat">
+                                            <img src="files/bois/kyowo/kyowo_minecraft_hypixel.png" class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/kyowo/kyowo_minecraft_hypixel.png" download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center kyowo minecraft">
+                                    <div>
+                                        <a href="./files/bois/kyowo/kyowo_minecraft_in_thought.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="KyOwO - Thinking">
+                                            <img src="files/bois/kyowo/kyowo_minecraft_in_thought.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/kyowo/kyowo_minecraft_in_thought.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center kyowo minecraft">
+                                    <div>
+                                        <a href="./files/bois/kyowo/kyowo_minecraft_jojo.png" data-toggle="lightbox"
+                                            data-gallery="example-gallery"
+                                            data-caption="KyOwO - Doing JOJO walk down the stairs">
+                                            <img src="files/bois/kyowo/kyowo_minecraft_jojo.png" class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/kyowo/kyowo_minecraft_jojo.png" download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center kyowo minecraft">
+                                    <div>
+                                        <a href="./files/bois/kyowo/kyowo_minecraft_looking_down.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="KyOwO - Looking down at some meat">
+                                            <img src="files/bois/kyowo/kyowo_minecraft_looking_down.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/kyowo/kyowo_minecraft_looking_down.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center kyowo minecraft">
+                                    <div>
+                                        <a href="./files/bois/kyowo/kyowo_minecraft_ninja.png" data-toggle="lightbox"
+                                            data-gallery="example-gallery" data-caption="KyOwO - Ninja">
+                                            <img src="files/bois/kyowo/kyowo_minecraft_ninja.png" class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/kyowo/kyowo_minecraft_ninja.png" download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center kyowo minecraft">
+                                    <div>
+                                        <a href="./files/bois/kyowo/kyowo_minecraft_ready_to_rub_that_cow.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="KyOwO - Thinking of how to cook that cow behind him">
+                                            <img src="files/bois/kyowo/kyowo_minecraft_ready_to_rub_that_cow.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/kyowo/kyowo_minecraft_ready_to_rub_that_cow.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center kyowo minecraft">
+                                    <div>
+                                        <a href="./files/bois/kyowo/kyowo_minecraft_sonic_skin.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="KyOwO - Fast boi sanic">
+                                            <img src="files/bois/kyowo/kyowo_minecraft_sonic_skin.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/kyowo/kyowo_minecraft_sonic_skin.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center kyowo minecraft">
+                                    <div>
+                                        <a href="./files/bois/kyowo/kyowo_minecraft_villager.png" data-toggle="lightbox"
+                                            data-gallery="example-gallery" data-caption="KyOwO - Villager skin">
+                                            <img src="files/bois/kyowo/kyowo_minecraft_villager.png" class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/kyowo/kyowo_minecraft_villager.png" download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center kyowo minecraft">
+                                    <div>
+                                        <a href="./files/bois/kyowo/kyowo_minecraft_wakanda.png" data-toggle="lightbox"
+                                            data-gallery="example-gallery" data-caption="KyOwO - Wakanda Knuckle skin">
+                                            <img src="files/bois/kyowo/kyowo_minecraft_wakanda.png" class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/kyowo/kyowo_minecraft_wakanda.png" download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center kyowo minecraft">
+                                    <div>
+                                        <a href="./files/bois/kyowo/kyowo_minecraft_walking_past.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="KyOwO - Walking Menacingly">
+                                            <img src="files/bois/kyowo/kyowo_minecraft_walking_past.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/kyowo/kyowo_minecraft_walking_past.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center minecraft">
+                                    <div>
+                                        <a href="./files/bois/enderman_creepy.png" data-toggle="lightbox"
+                                            data-gallery="example-gallery" data-caption="Creepy enderman">
+                                            <img src="files/bois/enderman_creepy.png" class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100" href="./files/bois/enderman_creepy.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center minecraft">
+                                    <div>
+                                        <a href="./files/bois/enderman_creepy_2.png" data-toggle="lightbox"
+                                            data-gallery="example-gallery" data-caption="Creepy enderman 2">
+                                            <img src="files/bois/enderman_creepy_2.png" class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100" href="./files/bois/enderman_creepy_2.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center">
-                            <div>
-                                <a href="./files/bois/hostuwuming_on_boat.png" data-toggle="lightbox"
-                                    data-gallery="example-gallery" data-caption="On a boat">
-                                    <img src="files/bois/hostuwuming_on_boat.png" class="img-fluid">
-                                </a>
-                                <a class="btn btn-primary w-100" href="./files/bois/hostuwuming_on_boat.png"
-                                    download>Download</a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center">
-                            <div>
-                                <a href="./files/bois/hostuwuming_watching.png" data-toggle="lightbox"
-                                    data-gallery="example-gallery" data-caption="Looking at homework folder">
-                                    <img src="files/bois/hostuwuming_watching.png" class="img-fluid">
-                                </a>
-                                <a class="btn btn-primary w-100" href="./files/bois/hostuwuming_watching.png"
-                                    download>Download</a>
-                            </div>
-                        </div>
+                        <!-- Right End -->
                     </div>
                 </div>
-                <!-- Left End -->
-                <!-- Right -->
-                <div class="col-sm-6">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center">
-                            <div>
-                                <a href="./files/bois/hostuwuming_watching_close.png" data-toggle="lightbox"
-                                    data-gallery="example-gallery" data-caption="Looking deep into your soul">
-                                    <img src="files/bois/hostuwuming_watching_close.png" class="img-fluid">
-                                </a>
-                                <a class="btn btn-primary w-100" href="./files/bois/hostuwuming_watching_close.png"
-                                    download>Download</a>
+            </div>
+            <div class="tab-pane fade" id="valheim" role="tabpanel" aria-labelledby="valheim-tab">
+                <div class="row text-center py-3 justify-content-center">
+                    <div class="row" id="gallery">
+                        <!-- Left -->
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center hostuwuming valheim">
+                                    <div>
+                                        <a href="./files/bois/hostuwuming/hostuwuming_valheim_art.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="HostUwUMing - Masterpiece 2">
+                                            <img src="files/bois/hostuwuming/hostuwuming_valheim_art.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/hostuwuming/hostuwuming_valheim_art.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center hostuwuming valheim">
+                                    <div>
+                                        <a href="./files/bois/hostuwuming/hostuwuming_valheim_harambe_posture.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="HostUwUMing - Harambe sitting posture">
+                                            <img src="files/bois/hostuwuming/hostuwuming_valheim_harambe_posture.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/hostuwuming/hostuwuming_valheim_harambe_posture.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center hostuwuming valheim">
+                                    <div>
+                                        <a href="./files/bois/hostuwuming/hostuwuming_valheim_portal.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="HostUwUMing - Portal">
+                                            <img src="files/bois/hostuwuming/hostuwuming_valheim_portal.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/hostuwuming/hostuwuming_valheim_portal.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center hostuwuming valheim">
+                                    <div>
+                                        <a href="./files/bois/hostuwuming/hostuwuming_valheim_portal_2.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="HostUwUMing - Portal 2">
+                                            <img src="files/bois/hostuwuming/hostuwuming_valheim_portal_2.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/hostuwuming/hostuwuming_valheim_portal_2.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center imhowotep valheim">
+                                    <div>
+                                        <a href="./files/bois/imhowotep/imhowotep_valheim_seconds_before_death.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="ImhoWotep - 5 seconds before death">
+                                            <img src="files/bois/imhowotep/imhowotep_valheim_seconds_before_death.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/imhowotep/imhowotep_valheim_seconds_before_death.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center imhowotep valheim">
+                                    <div>
+                                        <a href="./files/bois/imhowotep/imhowotep_valheim_seconds_before_death_2.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="ImhoWotep - 5 seconds before death 2">
+                                            <img src="files/bois/imhowotep/imhowotep_valheim_seconds_before_death_2.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/imhowotep/imhowotep_valheim_seconds_before_death_2.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center kyowo valheim">
+                                    <div>
+                                        <a href="./files/bois/kyowo/kyowo_valheim_high_ground.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="KyOwO - I have the high ground">
+                                            <img src="files/bois/kyowo/kyowo_valheim_high_ground.png" class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/kyowo/kyowo_valheim_high_ground.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center parallelken valheim">
+                                    <div>
+                                        <a href="./files/bois/parallelken/parallelken_valheim_death.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="ParallelKen - Death by poison">
+                                            <img src="files/bois/parallelken/parallelken_valheim_death.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/parallelken/parallelken_valheim_death.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center">
-                            <div>
-                                <a href="./files/bois/hostuwuming_portal.png" data-toggle="lightbox"
-                                    data-gallery="example-gallery" data-caption="Portal fail 1">
-                                    <img src="files/bois/hostuwuming_portal.png" class="img-fluid">
-                                </a>
-                                <a class="btn btn-primary w-100" href="./files/bois/hostuwuming_portal.png"
-                                    download>Download</a>
+                        <!-- Left End -->
+                        <!-- Right -->
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center parallelken valheim">
+                                    <div>
+                                        <a href="./files/bois/parallelken/parallelken_valheim_death_2.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="ParallelKen - Death by deathsquito">
+                                            <img src="files/bois/parallelken/parallelken_valheim_death_2.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/parallelken/parallelken_valheim_death_2.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center parallelken valheim">
+                                    <div>
+                                        <a href="./files/bois/parallelken/parallelken_valheim_death_3.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="ParallelKen - Death by missing the pool">
+                                            <img src="files/bois/parallelken/parallelken_valheim_death_3.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/parallelken/parallelken_valheim_death_3.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center parallelken valheim">
+                                    <div>
+                                        <a href="./files/bois/parallelken/parallelken_valheim_death_4.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="ParallelKen - Death by 2m fall">
+                                            <img src="files/bois/parallelken/parallelken_valheim_death_4.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/parallelken/parallelken_valheim_death_4.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center parallelken valheim">
+                                    <div>
+                                        <a href="./files/bois/parallelken/parallelken_valheim_drowned.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="ParallelKen - Drowned">
+                                            <img src="files/bois/parallelken/parallelken_valheim_drowned.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/parallelken/parallelken_valheim_drowned.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center parallelken valheim">
+                                    <div>
+                                        <a href="./files/bois/parallelken/parallelken_valheim_surrounded.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="ParallelKen - 3 Bruddas surrounding 1 white man">
+                                            <img src="files/bois/parallelken/parallelken_valheim_surrounded.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/parallelken/parallelken_valheim_surrounded.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center valheim">
+                                    <div>
+                                        <a href="./files/bois/bruddas_valheim_merge.png" data-toggle="lightbox"
+                                            data-gallery="example-gallery" data-caption="Bruddas sitting on each other">
+                                            <img src="files/bois/bruddas_valheim_merge.png" class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100" href="./files/bois/bruddas_valheim_merge.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center valheim">
+                                    <div>
+                                        <a href="./files/bois/bruddas_valheim_sauna.png" data-toggle="lightbox"
+                                            data-gallery="example-gallery" data-caption="Bruddas in sauna">
+                                            <img src="files/bois/bruddas_valheim_sauna.png" class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100" href="./files/bois/bruddas_valheim_sauna.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center">
-                            <div>
-                                <a href="./files/bois/kyowo_getting_ready.png" data-toggle="lightbox"
-                                    data-gallery="example-gallery" data-caption="Getting ready to slay that spider">
-                                    <img src="files/bois/kyowo_getting_ready.png" class="img-fluid">
-                                </a>
-                                <a class="btn btn-primary w-100" href="./files/bois/kyowo_getting_ready.png"
-                                    download>Download</a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center">
-                            <div>
-                                <a href="./files/bois/kyowo_ready_to_rub_that_cow.png" data-toggle="lightbox"
-                                    data-gallery="example-gallery"
-                                    data-caption="Thinking of how to cook that cow behind him">
-                                    <img src="files/bois/kyowo_ready_to_rub_that_cow.png" class="img-fluid">
-                                </a>
-                                <a class="btn btn-primary w-100" href="./files/bois/kyowo_ready_to_rub_that_cow.png"
-                                    download>Download</a>
-                            </div>
-                        </div>
+                        <!-- Right End -->
                     </div>
                 </div>
-                <!-- Right End -->
+            </div>
+            <div class="tab-pane fade" id="forest" role="tabpanel" aria-labelledby="forest-tab">
+                <div class="row text-center py-3 justify-content-center">
+                    <div class="row" id="gallery">
+                        <!-- Left -->
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center hostuwuming kyowo forest">
+                                    <div>
+                                        <a href="./files/bois/hostuwuming/hostuwuming_and_kyowo_forest.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="HostUwUMing & KyOwO - Planning">
+                                            <img src="files/bois/hostuwuming/hostuwuming_and_kyowo_forest.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/hostuwuming/hostuwuming_and_kyowo_forest.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center hostuwuming kyowo forest">
+                                    <div>
+                                        <a href="./files/bois/hostuwuming/hostuwuming_and_kyowo_forest_poster.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="HostUwUMing & KyOwO - Always has been">
+                                            <img src="files/bois/hostuwuming/hostuwuming_and_kyowo_forest_poster.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/hostuwuming/hostuwuming_and_kyowo_forest_poster.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center hostuwuming kyowo forest">
+                                    <div>
+                                        <a href="./files/bois/hostuwuming/hostuwuming_and_kyowo_forest_poster_masterpiece.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="HostUwUMing & KyOwO - The Forest Poster">
+                                            <img src="files/bois/hostuwuming/hostuwuming_and_kyowo_forest_poster_masterpiece.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/hostuwuming/hostuwuming_and_kyowo_forest_poster_masterpiece.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center hostuwuming forest">
+                                    <div>
+                                        <a href="./files/bois/hostuwuming/hostuwuming_forest_character.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="HostUwUMing - HostUWUMing character">
+                                            <img src="files/bois/hostuwuming/hostuwuming_forest_character.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/hostuwuming/hostuwuming_forest_character.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center hostuwuming forest">
+                                    <div>
+                                        <a href="./files/bois/hostuwuming/hostuwuming_forest_final_scene.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="HostUwUMing - Hot n Spicy meat armor">
+                                            <img src="files/bois/hostuwuming/hostuwuming_forest_final_scene.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/hostuwuming/hostuwuming_forest_final_scene.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center hostuwuming forest">
+                                    <div>
+                                        <a href="./files/bois/hostuwuming/hostuwuming_forest_hiding.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="HostUwUMing - Hiding from tentacle monster">
+                                            <img src="files/bois/hostuwuming/hostuwuming_forest_hiding.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/hostuwuming/hostuwuming_forest_hiding.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center hostuwuming forest">
+                                    <div>
+                                        <a href="./files/bois/hostuwuming/hostuwuming_forest_on_fire.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="HostUwUMing - The man on fire">
+                                            <img src="files/bois/hostuwuming/hostuwuming_forest_on_fire.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/hostuwuming/hostuwuming_forest_on_fire.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center hostuwuming kyowo forest">
+                                    <div>
+                                        <a href="./files/bois/hostuwuming/hostuwuming_forest_ready_to_chop_kyowo.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="HostUwUMing & KyOwO - About to chop some meat">
+                                            <img src="files/bois/hostuwuming/hostuwuming_forest_ready_to_chop_kyowo.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/hostuwuming/hostuwuming_forest_ready_to_chop_kyowo.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Left End -->
+                        <!-- Right -->
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center kyowo forest">
+                                    <div>
+                                        <a href="./files/bois/kyowo/kyowo_forest_high_ground.png" data-toggle="lightbox"
+                                            data-gallery="example-gallery"
+                                            data-caption="KyOwO - I have the high ground">
+                                            <img src="files/bois/kyowo/kyowo_forest_high_ground.png" class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/kyowo/kyowo_forest_high_ground.png" download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center kyowo forest">
+                                    <div>
+                                        <a href="./files/bois/kyowo/kyowo_forest_knocked_back_by_tentacle.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="KyOwO - Getting penetrated by tentacle monster">
+                                            <img src="files/bois/kyowo/kyowo_forest_knocked_back_by_tentacle.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/kyowo/kyowo_forest_knocked_back_by_tentacle.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center kyowo forest">
+                                    <div>
+                                        <a href="./files/bois/kyowo/kyowo_forest_staring_into_your_soul.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="KyOwO - Staring into your soul">
+                                            <img src="files/bois/kyowo/kyowo_forest_staring_into_your_soul.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/kyowo/kyowo_forest_staring_into_your_soul.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center parallelken kyowo forest">
+                                    <div>
+                                        <a href="./files/bois/parallelken/parallelken_and_kyowo_forest_twins.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="ParallelKen & KyOwO - Twins">
+                                            <img src="files/bois/parallelken/parallelken_and_kyowo_forest_twins.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/parallelken/parallelken_and_kyowo_forest_twins.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center parallelken forest">
+                                    <div>
+                                        <a href="./files/bois/parallelken/parallelken_forest_chainsaw.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="ParallelKen - Getting ready to chop some meat">
+                                            <img src="files/bois/parallelken/parallelken_forest_chainsaw.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/parallelken/parallelken_forest_chainsaw.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center parallelken forest">
+                                    <div>
+                                        <a href="./files/bois/parallelken/parallelken_forest_character.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="ParallelKen - Forest character">
+                                            <img src="files/bois/parallelken/parallelken_forest_character.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/parallelken/parallelken_forest_character.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center parallelken forest">
+                                    <div>
+                                        <a href="./files/bois/parallelken/parallelken_forest_sit.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="ParallelKen - Sitting down">
+                                            <img src="files/bois/parallelken/parallelken_forest_sit.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/parallelken/parallelken_forest_sit.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Right End -->
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="borderlands" role="tabpanel" aria-labelledby="borderlands-tab">
+                <div class="row text-center py-3 justify-content-center">
+                    <div class="row" id="gallery">
+                        <!-- Left -->
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center hostuwuming borderlands">
+                                    <div>
+                                        <a href="./files/bois/hostuwuming/hostuwuming_borderlands_big_head.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="HostUwUMing - Big brain">
+                                            <img src="files/bois/hostuwuming/hostuwuming_borderlands_big_head.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/hostuwuming/hostuwuming_borderlands_big_head.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center kyowo borderlands">
+                                    <div>
+                                        <a href="./files/bois/kyowo/kyowo_borderlands_zane.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="KyOwO - Trying to rub Tannis">
+                                            <img src="files/bois/kyowo/kyowo_borderlands_zane.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/kyowo/kyowo_borderlands_zane.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Left End -->
+                        <!-- Right -->
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center borderlands">
+                                    <div>
+                                        <a href="./files/bois/bruddas_borderlands.png" data-toggle="lightbox"
+                                            data-gallery="example-gallery"
+                                            data-caption="Bruddas group photo?">
+                                            <img src="files/bois/bruddas_borderlands.png" class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/bruddas_borderlands.png" download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-6 col-sm-12 py-2 d-flex align-items-end justify-content-center borderlands">
+                                    <div>
+                                        <a href="./files/bois/bruddas_borderlands_2.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="Bruddas group photo">
+                                            <img src="files/bois/bruddas_borderlands_2.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/bruddas_borderlands_2.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Right End -->
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="deeprock" role="tabpanel" aria-labelledby="deeprock-tab">
+                <div class="row text-center py-3 justify-content-center">
+                    <div class="row" id="gallery">
+                        <!-- Left -->
+                        <!-- Since there is not much in here go with col-sm-12 and comment out the right section -->
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div
+                                    class="col-md-3 col-sm-12 py-2 d-flex align-items-end justify-content-center parallelken deeprock">
+                                    <div>
+                                        <a href="./files/bois/parallelken/parallelken_deeprock_rotating_on_dancefloor.gif"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="ParallelKen & KyOwO & ImhoWotep - Bruddas dancing">
+                                            <img src="files/bois/parallelken/parallelken_deeprock_rotating_on_dancefloor.gif"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/parallelken/parallelken_deeprock_rotating_on_dancefloor.gif"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-3 col-sm-12 py-2 d-flex align-items-end justify-content-center parallelken deeprock">
+                                    <div>
+                                        <a href="./files/bois/parallelken/parallelken_deeprock_rotate.gif"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="ParallelKen - Very flexible body">
+                                            <img src="files/bois/parallelken/parallelken_deeprock_rotate.gif"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/parallelken/parallelken_deeprock_rotate.gif"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Left End -->
+                        <!-- Right -->
+                        <!-- <div class="col-sm-6">
+                                <div class="row">
+                                </div>
+                            </div> -->
+                        <!-- Right End -->
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="overcooked" role="tabpanel" aria-labelledby="overcooked-tab">
+                <div class="row text-center py-3 justify-content-center">
+                    <div class="row" id="gallery">
+                        <!-- Left -->
+                        <!-- Since there is not much in here go with col-sm-12 and comment out the right section -->
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div
+                                    class="col-md-3 col-sm-12 py-2 d-flex align-items-end justify-content-center overcooked">
+                                    <div>
+                                        <a href="./files/bois/bruddas_overcooked_2_imposter.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="Imposter">
+                                            <img src="files/bois/bruddas_overcooked_2_imposter.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/bruddas_overcooked_2_imposter.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-md-3 col-sm-12 py-2 d-flex align-items-end justify-content-center overcooked">
+                                    <div>
+                                        <a href="./files/bois/bruddas_overcooked_2_turtle_squad.png"
+                                            data-toggle="lightbox" data-gallery="example-gallery"
+                                            data-caption="Turtle Squad">
+                                            <img src="files/bois/bruddas_overcooked_2_turtle_squad.png"
+                                                class="img-fluid">
+                                        </a>
+                                        <a class="btn btn-primary w-100"
+                                            href="./files/bois/bruddas_overcooked_2_turtle_squad.png"
+                                            download>Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Left End -->
+                        <!-- Right -->
+                        <!-- <div class="col-sm-6">
+                                <div class="row">
+                                </div>
+                            </div> -->
+                        <!-- Right End -->
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -249,8 +1171,6 @@
     <!-- Scripts -->
     <script src="./js/index.bundle.min.js"></script>
     <script src="./js/additional.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>jq = jQuery.noConflict();</script>
     <script>
         var audio = new Audio('files/bois/barbie_metal_1.mp3');
         audio.volume = 0.1;
